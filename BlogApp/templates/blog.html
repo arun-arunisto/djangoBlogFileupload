@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %} {{blog.slug}} {% endblock %}
+{% block content %}
+<div class="blog-title">
+  <h2>{{blog.title}}</h2>
+  <img src="/media/{{blog.blog_img}}" style="width:100%;height:auto;">
+  <p>{{blog.content}}</p>
+</div>
+{% endblock %}
